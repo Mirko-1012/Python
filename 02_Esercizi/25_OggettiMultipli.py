@@ -6,9 +6,9 @@ class Person:
     def greet(self):
         print(f"Ciao! Mi chiamo {self.name} e ho {self.age} anni.")
 
-persona_a = Person("Alice", 30)
+persona1 = Person("Alice", 30)
 
-persona_b = Person("Bruno", 15)
+persona2 = Person("Bruno", 15)
 
-persona_a.greet()
-persona_b.greet()
+persona1.greet()
+persona2.greet()
