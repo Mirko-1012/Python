@@ -16,7 +16,7 @@ class Playlist:
             print("Non posso sommare gli elementi richiesti")
             return
     
-    def _str_(self):
+    def __str__(self):
         a= f'''Titolo della Playlist: {self.name}\n
             {self.pl_descr}
             questa playlist contiene esattamente {len(self.songs)} canzoni \n
