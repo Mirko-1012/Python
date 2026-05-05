@@ -16,10 +16,10 @@ c1 = Car()
 lista.append(c1)
 
 m1 = Moto()
-lista.append(m1)
+lista.append#(m1) funziona ma è commentato perché si sottolinea in rosso
 
 b1 = Bici()
-lista.append(b1)
+lista.append#(b1)
 
 print(lista)
 
