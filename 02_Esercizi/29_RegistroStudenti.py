@@ -4,7 +4,7 @@ class Student:
         self.grade = grade
 
     def is_promoted(self):
-        return self.grade >= 60
+        return self.grade >= 60 
 
 registro = [
     Student("Blanco", 85),

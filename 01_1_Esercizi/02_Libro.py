@@ -14,7 +14,7 @@ class Libro:
         else:
             print("Errore: il prezzo non può essere negativo")
     
-    def __str__(self):
+    def __str__(self): # metodo speciale per rappresentazione stringa
         return f"'{self.titolo}'di {self.autore} costa {self.__prezzo} €"
     
 
@@ -32,8 +32,8 @@ class Catalogo:
         self.__valore_totale = valore
 
     def ricalcola_valore(self):
-        totale = sum(libro.get_prezzo() for libro in self.lista_libri)
-        self.set_valore_totale(totale)
+        totale = sum(libro.get_prezzo() for libro in self.lista_libri) # calcola il totale dei prezzi dei libri
+        self.set_valore_totale(totale) # aggiorna il valore totale del catalogo
 
     def aggiungi_libro(self, libro):
         self.lista_libri.append(libro)
@@ -49,15 +49,15 @@ class Catalogo:
                 return
         print(f"Libro: {titolo_libro} non trovato")
 
-    def __eq__(self, altro_catalogo):
-        if not isinstance(altro_catalogo, Catalogo):
-            return False
+    def __eq__(self, altro_catalogo): # metodo speciale per confronto di uguaglianza
+        if not isinstance(altro_catalogo, Catalogo): # verifica se l'altro oggetto è un'istanza di Catalogo
+            return False # se non è un Catalogo, non sono uguali
         
         return (self.lista_libri == altro_catalogo.lista_libri and self.__valore_totale == altro_catalogo.get_valore_totale())
     
-    def __add__(self, altro_catalogo):
+    def __add__(self, altro_catalogo): # metodo speciale per unire due cataloghi
         nuovo_nome = f"Unione di {self.nome} e {altro_catalogo.nome}"
-        nuovo_cat = Catalogo(nuovo_nome, "Catalogo unito")
+        nuovo_cat = Catalogo(nuovo_nome, "Catalogo unito") # crea un nuovo catalogo con un nome che indica l'unione
 
         nuovo_cat.lista_libri = self.lista_libri + altro_catalogo.lista_libri
         nuovo_cat.__ricalcola_valore()
