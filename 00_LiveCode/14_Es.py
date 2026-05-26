@@ -1,4 +1,4 @@
-def saluto(nome: str):
+def saluto(nome: str): # nome è un parametro, str è un tipo di dato, ma non è obbligatorio specificarlo
     print(f"ciao, {nome}!")
 
 

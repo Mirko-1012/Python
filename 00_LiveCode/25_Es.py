@@ -10,7 +10,7 @@ p1 = Person("Marta", 23)
 
 print(p1.name)
 print(p1.getAge())
-#object._classname_privateattribute
+#object._classname_privateattribute # Name Mangling, per accedere a un attributo privato bisogna usare questa sintassi, ma è sconsigliato farlo
 #print(p1._Person__age) # Name Mangling
 print(list(p1.__dict__))
 #print(p1.__age)

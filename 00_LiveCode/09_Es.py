@@ -24,7 +24,7 @@ c = 0
 
 while c < 11:
     c+=1
-    if (c % 2 != 0):
+    if (c % 2 != 0): 
         continue
     print(c)
     

@@ -17,7 +17,7 @@ print(isinstance(pl1, int))
 print("Has title?", hasattr(pl1, "name"))
 print("Has promotion?", hasattr(pl1, "promotion"))
 
-print(list(Playlist.__dict__))
+print(list(Playlist.__dict__)) # il __dict__ è un dizionario che contiene tutti gli attributi e i metodi della classe
 print(list(pl1.__dict__))
 
 a = input("Inserisci l'attributo cercato nella playlist: ")

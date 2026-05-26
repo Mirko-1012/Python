@@ -5,14 +5,14 @@ print(a)
 
 ###################################################
 
-l = [i*3 for i in range(100)] # list_comprehention
+l = [i*3 for i in range(100)] # list_comprehention in range(100) moltiplicato per 3
 print(l)
 
 ###################################################
 
 l2 = []
 for i in range(20):
-    if(i % 2 == 0):
+    if(i % 2 == 0): 
         l2.append(i)
 print(l2)
 
@@ -28,7 +28,7 @@ print(l4)
 
 s = "Ciao a tutti i 25 caciotti"
 
-s2 = s.split()
+s2 = s.split() # split() divide la stringa in una lista di parole, se non specifico nulla come argomento, divide per spazi
 print(s2)
 
 lw = [len(i) for i in s2]
