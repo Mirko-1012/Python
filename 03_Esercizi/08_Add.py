@@ -3,12 +3,12 @@ class Course:
         self.title = title
         self.students = []
 
-    def __add__(self, other_course):
+    def __add__(self, other_course): # metodo per unire due corsi in uno solo
         nuovo_corso = Course(f"{self.title} e {other_course.title}")
         nuovo_corso.students = self.students + other_course.students
         return nuovo_corso
 
-    def __str__(self):
+    def __str__(self): # metodo per restituire una rappresentazione testuale del corso
         return f"Corso: {self.title} | Studenti: {self.students}"
 
 

@@ -6,13 +6,13 @@ class Vehicle:
     def describe(self):
         print(f"Veicolo: {self.model}, Anno: {self.year}")
         
-class Car(Vehicle):
+class Car(Vehicle): # La classe Car eredita da Vehicle 
     def __init__(self, model, year, doors = 5):
         super().__init__(model, year)
         self.doors = doors
 
     def describe_car(self):
-        self.describe()
+        self.describe() # Chiamata al metodo della classe base
         print(f"Porte: {self.doors}")
 
 

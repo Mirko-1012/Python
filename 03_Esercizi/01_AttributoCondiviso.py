@@ -1,5 +1,5 @@
 class Vehicle:
-    type = "Car"
+    type = "Car" # Attributo di classe condiviso da tutte le istanze
 
     def __init__(self, model):
         self.model = model

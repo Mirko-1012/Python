@@ -8,11 +8,11 @@ class Vehicle:
         
 class Car(Vehicle):
     def __init__(self, model, year, doors = 5):
-        super().__init__(model, year)
+        super().__init__(model, year) # richiamo al costruttore della classe base
         self.doors = doors
 
     def describe(self):
-        super().describe()
+        super().describe() # richiamo al metodo describe della classe base
         print(f"Il numero di porte è: {self.doors}")
 
 

@@ -5,7 +5,7 @@ class Playlist:
         self.songs = songs
     
 def controlla_attributo(oggetto, nome_attributo):
-    if hasattr(oggetto, nome_attributo):
+    if hasattr(oggetto, nome_attributo): # hasattr() restituisce True se l'oggetto ha l'attributo specificato, altrimenti False
         print(f"has attribute {nome_attributo}")
     else:
         print(f"missing attribute {nome_attributo}")

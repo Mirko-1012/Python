@@ -11,7 +11,7 @@ pl1 = Playlist("Estate 2025", "Le canzoni dell'estate", ['Labirinto', 'Niente ca
 
 scelta = input("Quale metodo vuoi eseguire? (scrivi 'play'): ")
 
-azione = getattr(pl1, scelta, None)
+azione = getattr(pl1, scelta, None) # getattr() restituisce l'attributo di un oggetto in base al nome passato come stringa. Se l'attributo non esiste, restituisce None (o un valore di default se specificato).
 
 if azione:
     azione()

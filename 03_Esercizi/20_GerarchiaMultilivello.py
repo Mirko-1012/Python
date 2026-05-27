@@ -8,7 +8,7 @@ class Vehicle:
 
 class Car(Vehicle):
     def __init__(self, model, year, doors=5):
-        super().__init__(model, year)
+        super().__init__(model, year) # richiamo al costruttore della classe base
         self.doors = doors
 
     def accelerate(self):
@@ -16,16 +16,16 @@ class Car(Vehicle):
 
 class superCar(Car):
     def __init__(self, model, year, doors=2, color="Red"):
-        super().__init__(model, year, doors)
+        super().__init__(model, year, doors) # richiamo al costruttore della classe Car, che a sua volta richiama quello di Vehicle
         self.color = color
 
     def accelerate(self):
         print(f"La superCar {self.color} {self.model} sta volando sull'asfalto!")
 
     def ex_accelerate(self):
-        super().accelerate()
+        super().accelerate() # richiamo al metodo accelerate della classe Car, che a sua volta richiama quello di Vehicle
 
-s1 = superCar("Ferrari Purosangue", 2024, 4, "Rosso Corsa")
+s1 = superCar("Ferrari Purosangue", 2024, 4, "Rosso Corsa") # istanza di superCar
 
 s1.accelerate()
 s1.ex_accelerate()
