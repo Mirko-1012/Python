@@ -1,4 +1,3 @@
-# Partiamo da un dizionario
 a = {"  Mela ": 10, "b": 20, "  MELA  ": 30, "c": 40}
 
 b = {}
