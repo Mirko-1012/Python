@@ -11,9 +11,10 @@ print(dizionario_stringhe)
 
 
 
+'''
+
 b = [12, "  Mela ", "Banana", 3.14, "  ArAnCia  ", True, "Kiwi"]
 
-'''
 sum = 0
 
 for el in b:
