@@ -1,8 +1,8 @@
-lista_partenza = [12, "  Mela ", "Banana", 3.14, "  ArAnCia  ", True, "Kiwi"]
+a = [12, "  Mela ", "Banana", 3.14, "  ArAnCia  ", True, "Kiwi"]
 
 dizionario_stringhe = {}
 
-for elemento in lista_partenza:
+for elemento in a:
     if type(elemento) == str:
         stringa_sanificata = elemento.strip().lower()
         dizionario_stringhe[stringa_sanificata] = len(stringa_sanificata)
