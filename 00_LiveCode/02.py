@@ -8,3 +8,15 @@ for elemento in a:
         dizionario_stringhe[stringa_sanificata] = len(stringa_sanificata)
 
 print(dizionario_stringhe)
+
+
+
+b = [12, "  Mela ", "Banana", 3.14, "  ArAnCia  ", True, "Kiwi"]
+
+sum = 0
+
+for el in b:
+    if type(el) in (int, float):
+        sum += el
+
+print(sum)
